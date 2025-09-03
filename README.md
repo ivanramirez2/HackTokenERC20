@@ -1,8 +1,14 @@
 # HackTokenERC20 - Advanced ERC20 Token with Security Controls  
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/username/repo/blob/master/LICENSE)
-[![Solidity](https://img.shields.io/badge/language-Solidity-blue)](https://soliditylang.org/)
-[![GitHub Issues](https://img.shields.io/github/issues/username/repo.svg)](https://github.com/username/repo/issues)
+[![Solidity](https://img.shields.io/badge/Solidity-0.8.26-blue)](https://docs.soliditylang.org/en/v0.8.26/) 
+[![Foundry](https://img.shields.io/badge/Foundry-Framework-orange)](https://book.getfoundry.sh/) 
+[![Arbitrum](https://img.shields.io/badge/Arbitrum-Network-blue)](https://arbitrum.io/) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
+
+---
+
+![Launch Vault Diagram](a58a5b20-1188-4886-ade5-4471199cba16.png)
+
 
 
 HackTokenERC20 es un token ERC20 avanzado construido con **OpenZeppelin** y diseñado para máxima seguridad y control administrativo. Incluye funcionalidades de **minting**, **burning**, **pausable transfers** y **transferencia de ownership**, ideal para proyectos DeFi, DAOs o plataformas que requieren gobernanza robusta.  
