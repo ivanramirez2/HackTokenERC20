@@ -1,13 +1,20 @@
+
+<div align="center">
+  
 # HackTokenERC20 - Advanced ERC20 Token with Security Controls  
 
-[![Solidity](https://img.shields.io/badge/Solidity-0.8.26-blue)](https://docs.soliditylang.org/en/v0.8.26/) 
-[![Foundry](https://img.shields.io/badge/Foundry-Framework-orange)](https://book.getfoundry.sh/) 
-[![Arbitrum](https://img.shields.io/badge/Arbitrum-Network-blue)](https://arbitrum.io/) 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
+![Solidity](https://img.shields.io/badge/SOLIDITY-0.8.24-2C2C2C?style=for-the-badge&logo=solidity)&nbsp;
+![Foundry](https://img.shields.io/badge/FOUNDRY-Framework-FFB800?style=for-the-badge)&nbsp;
+![Arbitrum](https://img.shields.io/badge/ARBITRUM-Network-28A0F0?style=for-the-badge)&nbsp;
+![License: MIT](https://img.shields.io/badge/LICENSE-MIT-yellow?style=for-the-badge)
 
 ---
 
 ![Launch Vault Diagram](a58a5b20-1188-4886-ade5-4471199cba16.png)
+
+</div>
+
+---
 
 
 
@@ -26,7 +33,7 @@ HackTokenERC20 es un token ERC20 avanzado construido con **OpenZeppelin** y dise
 ---
 
 ## 🛠 Tecnologías  
-- **Lenguaje:** Solidity ^0.8.x  
+- **Lenguaje:** Solidity ^0.8.24  
 - **Framework:** [Foundry](https://book.getfoundry.sh/)  
 - **Librerías:**  
   - [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)  
