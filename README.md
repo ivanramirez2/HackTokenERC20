@@ -32,6 +32,18 @@ HackTokenERC20 es un token ERC20 avanzado construido con **OpenZeppelin** y dise
 
 ---
 
+## 🔒 Security Features
+
+- Ownable Access Control
+- Pausable Contract
+- Custom Errors
+- Zero Address Checks
+- Burn Function with Balance Check
+- Event Logging
+- Standard OpenZeppelin Contracts
+
+---
+
 ## 🛠 Tecnologías  
 - **Lenguaje:** Solidity ^0.8.24  
 - **Framework:** [Foundry](https://book.getfoundry.sh/)  
