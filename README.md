@@ -65,10 +65,15 @@ HackTokenERC20 es un token ERC20 avanzado construido con **OpenZeppelin** y dise
 
 ---
 
-## 📦 Instalación  
-Clona el repositorio e instala dependencias:  
-
+## 📦 Installation  
+1. Clone the repository
 ```bash
-git clone https://github.com/tu-usuario/HackTokenERC20.git
+git clone https://github.com/ivanramirez2/HackTokenERC20.git
 cd HackTokenERC20
+```
+2. Install dependencies
+```bash
 forge install
+```
+
+
