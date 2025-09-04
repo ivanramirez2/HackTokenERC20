@@ -22,7 +22,7 @@ HackTokenERC20 es un token ERC20 avanzado construido con **OpenZeppelin** y dise
 
 ---
 
-## 🚀 Características Principales  
+## 🚀 Key features
 - **Token ERC20 Estándar:** Basado en el estándar ERC20 ampliamente auditado.  
 - **Minting Controlado:** Solo el propietario del contrato puede acuñar nuevos tokens.  
 - **Burning Flexible:** Cualquier usuario puede quemar sus propios tokens.  
