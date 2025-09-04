@@ -32,8 +32,11 @@ HackTokenERC20 es un token ERC20 avanzado construido con **OpenZeppelin** y dise
 
 ---
 <div align="center">
-![Proyect Diagram](ProyectStructure.png)
+
+![Hack Token Diagram](ProyectStructure.png)
+
 </div>
+
 
 ## 🔒 Security Features
 
