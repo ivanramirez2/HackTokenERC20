@@ -10,7 +10,7 @@
 
 ---
 
-![Launch Vault Diagram](a58a5b20-1188-4886-ade5-4471199cba16.png)
+![Launch Vault Diagram](HackTokenArchitecture.png)
 
 </div>
 
