@@ -13,9 +13,15 @@ import "@openzeppelin/contracts/utils/Pausable.sol";
  */
 contract HackToken is ERC20, Pausable, Ownable {
 
-    // ===== Custom Errors =====
+    // --- Variables ---
+    uint256 public maxSupply = 1000000000 * (10 ** decimals()); // Sumunistro max 1 billon de HACK
+    uint256 public mintedTokens;
+    
+    // --- Custom Errors ---
     error AmountMustBeGreaterThanZero();
     error InvalidAddress();
+    error MaxSupplyExceeded();
+    error InsufficientBalance();
 
     // --- Constructor ---
 
@@ -48,6 +54,9 @@ contract HackToken is ERC20, Pausable, Ownable {
     function mintTokens(address to_, uint256 amount_) public onlyOwner {
         if (to_ == address(0)) revert InvalidAddress();
         if (amount_ == 0) revert AmountMustBeGreaterThanZero();
+
+        if (mintedTokens + amount_ > maxSupply) revert MaxSupplyExceeded();
+        mintedTokens += amount_;
         
         _mint(to_, amount_);
         emit TokenMinted(to_, amount_);
@@ -59,6 +68,8 @@ contract HackToken is ERC20, Pausable, Ownable {
      * @param newOwner_ The address that will become the new owner.
      */
     function transferOwnershipCustom(address newOwner_) public onlyOwner {
+        require(newOwner_ != address(0), "New owner cannot be zero address");
+        require(newOwner_ != owner(), "New owner must be different from current owner");
         emit TransferNewOwner(owner(), newOwner_);
         transferOwnership(newOwner_);
     }
@@ -66,10 +77,11 @@ contract HackToken is ERC20, Pausable, Ownable {
     /**
      * @notice Burn (destroy) a specified amount of your own tokens.
      * @dev Reduces the total token supply.
-     * @param amount_ The amount of tokens to burn (in smallest units, usually wei).
+     * @param amount_ The amount of tokens to burn (in Wei).
      */
-    function burn(uint256 amount_) public {
-        require(balanceOf(msg.sender) >= amount_, "Insufficient balance to burn");
+
+    function burn(uint256 amount_) public onlyOwner whenNotPaused {
+        if (balanceOf(msg.sender) < amount_) revert InsufficientBalance();
         if (amount_ == 0) revert AmountMustBeGreaterThanZero();
         _burn(msg.sender, amount_);
         emit TokenBurned(msg.sender, amount_);
@@ -91,8 +103,6 @@ contract HackToken is ERC20, Pausable, Ownable {
         _unpause();
     }
 
-
-    // --- Internal functions ---
 
     /**
      * @notice Internal hook for all token updates.
