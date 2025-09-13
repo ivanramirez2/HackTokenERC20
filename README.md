@@ -14,22 +14,27 @@
 ![Hack Token Diagram](HackTokenArchitecture.png)
 
 </div>
+--
+
+HackTokenERC20 is an advanced ERC20 token built with **OpenZeppelin** and designed for maximum security and administrative control. It includes features for **minting**, **burning**, **pausable transfers**, and **ownership transfer**, ideal for DeFi projects, DAOs, or platforms requiring robust governance. 
 
 ---
 
-
-
-HackTokenERC20 es un token ERC20 avanzado construido con **OpenZeppelin** y diseñado para máxima seguridad y control administrativo. Incluye funcionalidades de **minting**, **burning**, **pausable transfers** y **transferencia de ownership**, ideal para proyectos DeFi, DAOs o plataformas que requieren gobernanza robusta.  
+## :gear: Live Deployment
+- **Token Contract:** 0x38dFe380E1582752a4131D8231183C5e2A406532
+- **Token Name:** Hacktoken
+- **Token Name:** HACK
+- **Decimals:** 18
 
 ---
 
 ## 🚀 Key features
-- **Token ERC20 Estándar:** Basado en el estándar ERC20 ampliamente auditado.  
-- **Minting Controlado:** Solo el propietario del contrato puede acuñar nuevos tokens.  
-- **Burning Flexible:** Cualquier usuario puede quemar sus propios tokens.  
-- **Pausado de Transferencias:** El propietario puede pausar/despausar el token en casos de emergencia.  
-- **Transferencia de Ownership:** Gestión sencilla y segura de la propiedad del contrato.  
-- **Eventos Detallados:** Emite eventos claros para auditorías y monitoreo.  
+- **Standard ERC20 Token:** Based on the widely audited ERC20 standard
+- **Controlled Minting:** Only the contract owner can mint new tokens
+- **Flexible Burning:** Cualquier usuario puede quemar sus propios tokens
+- **Pausable Transfers:** The owner can pause/unpause the token in emergencies
+- **Ownership Transfer:** Simple and secure contract ownership management
+- **Eventos Detallados:**  Emits clear events for audits and monitoring
 
 ---
 <div align="center">
@@ -56,13 +61,13 @@ HackTokenERC20 es un token ERC20 avanzado construido con **OpenZeppelin** y dise
 
 ---
 
-## 🛠 Tecnologías  
+## 🛠 Technologies   
 - **Lenguaje:** Solidity ^0.8.24  
 - **Framework:** [Foundry](https://book.getfoundry.sh/)  
 - **Librerías:**  
   - [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)  
     - ERC20, Ownable, Pausable  
-- **Redes:** Compatible con cualquier red EVM (Ethereum, Arbitrum, Optimism, Polygon, etc.)  
+- **Redes:** Compatible with any EVM network (Ethereum, Arbitrum, Optimism, Polygon, etc.) 
 
 ---
 
