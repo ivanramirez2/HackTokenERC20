@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 <div align="center">
   
 # HackTokenERC20 - Advanced ERC20 Token with Security Controls  
