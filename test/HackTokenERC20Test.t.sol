@@ -279,6 +279,7 @@ contract HackTokenERC20Test is Test {
     function testTransferWhilePausedReverts() public {
         address recipient = vm.addr(7);
         uint256 amount = 10 ether;
+        bool success;
 
         vm.prank(admin);
         _hacktoken.mintTokens(admin, amount);
@@ -289,6 +290,7 @@ contract HackTokenERC20Test is Test {
         vm.prank(admin);
         vm.expectRevert();
         _hacktoken.transfer(recipient, amount);
+        assertTrue(success);
     }
 
     /// @notice Tests that minting while paused reverts.
